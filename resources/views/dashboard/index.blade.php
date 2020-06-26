@@ -2,7 +2,7 @@
 
 @section('content')
     
-@livewire('forge')
+    @livewire('forge')
 
 @endsection
 
