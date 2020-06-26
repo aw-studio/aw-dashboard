@@ -2,20 +2,34 @@
 
 namespace App\Http\Livewire;
 
-use Laravel\Forge\ApiProvider;
+use App\Models\Site;
+use App\Models\Deploy;
+use App\Models\Server;
 use Livewire\Component;
-use Laravel\Forge\Forge as ForgeApi;
 
 class Forge extends Component
 {
-    protected $forge;
+    public $servers = [];
 
-    public $servers;
+    public $sites = [];
+
+    public $deploys = [];
 
     public function mount()
     {
-        // $this->forge = new ForgeApi(new ApiProvider(env('FORGE_API_TOKEN')));
-        // $this->servers = $this->forge->lazyLoad();
+        $this->load();
+    }
+
+    public function hydrate()
+    {
+        $this->load();
+    }
+
+    protected function load()
+    {
+        $this->sites = Site::all();
+        $this->servers = Server::all();
+        $this->deploys = Deploy::where('seen', false)->get();
     }
 
     public function render()
