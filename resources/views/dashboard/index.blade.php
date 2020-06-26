@@ -2,7 +2,10 @@
 
 @section('content')
     
-@livewire('forge')
+<div class="flex flex-wrap">
+    @livewire('forge')
+    @livewire('forge')
+</div>
 
 @endsection
 
