@@ -17879,8 +17879,15 @@ video {
 }
 
 body {
-  background: #161616;
+  background: #26282B;
   color: white;
+}
+
+.card {
+  background-image: linear-gradient(180deg, #2A2F33 0%, #1A1C1F 100%);
+  border: 1px solid #323438;
+  box-shadow: 0 0 80px 45px #1F2022;
+  border-radius: 20px;
 }
 
 @media (min-width: 640px) {

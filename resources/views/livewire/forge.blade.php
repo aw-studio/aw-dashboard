@@ -1,6 +1,6 @@
 
 <div class="w-full lg:w-1/2 box-border" wire:poll.100ms>
-<div class="border border-white m-8 p-8">
+<div class="card m-8 p-8">
     <h2 class="text-2xl font-bold">Forge Status</h2>
     <br>
     <p>
