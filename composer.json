@@ -16,6 +16,8 @@
     "require": {
         "php": "^7.2.5",
         "aw-studio/dashboard": "dev-master",
+        "cbl/blade-script": "^0.0.4",
+        "cbl/blade-style": "^0.3.1",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
