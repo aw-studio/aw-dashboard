@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/forge', function () {
-    return view('');
+Route::get('/', function () {
+    return view('dashboard.index');
 });
