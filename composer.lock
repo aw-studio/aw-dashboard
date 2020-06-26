@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7aa6df30a1ec85bae8d498aa7d7e5e89",
+    "content-hash": "2ff60337bd5e03c4cc19ff5363e7f2aa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,43 @@
                 "stack"
             ],
             "time": "2020-05-31T07:17:05+00:00"
+        },
+        {
+            "name": "aw-studio/dashboard",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/dashboard",
+                "reference": "584c37d295f590d6c42d9c7e4d2f5a57690e77d7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AwStudio\\Dashboard\\DashboardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AwStudio\\Dashboard\\": "src/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "cbl",
+                    "email": "lennart.carbe@gmail.com"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "brick/math",
@@ -6333,7 +6370,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "aw-studio/dashboard": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
